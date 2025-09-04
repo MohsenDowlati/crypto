@@ -1,0 +1,28 @@
+@import "../../node_modules/tailwindcss/dist/lib.d.mts";
+
+:root {
+  --background: #f5f5f5;
+  --foreground: #171717;
+  --primary: #85bbf1;
+  --secondary: #6bbf6e;
+  --CTA: #32077e;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
