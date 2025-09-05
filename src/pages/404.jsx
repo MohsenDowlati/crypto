@@ -1,6 +1,4 @@
 import Link from 'next/link';
-import { BackArrowSvg, CatFourOFourSvg } from '@svg/index';
-import styles from '@styles/404.module.css';
 
 /**
  * "Custom 404 page."
@@ -9,16 +7,11 @@ import styles from '@styles/404.module.css';
  */
 export default function FourOFour(){
     return (
-        <div className={styles.container}>
-            <div className={styles.imageContainer}>
-                <CatFourOFourSvg />
-            </div>
-            <div className={styles.text}>404</div>
-            <div className={styles.content}>
-                <p className={styles.bigText}>Page Not Found</p>
-                <p className={styles.paragraph}>Sorry, the page you are looking for doesn&lsquo;t exist.</p>
-                <Link href="/" className={styles.btn} title="Return Home">
-                    <BackArrowSvg className="h-5 w-5" />
+        <div>
+            <div>
+                <p>Page Not Found</p>
+                <p>404</p>
+                <Link href="/" title="Return Home">
                     <span>Return Home</span>
                 </Link>
             </div>
