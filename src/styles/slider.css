@@ -1,0 +1,28 @@
+.slider_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider_logo {
+    width: 55px;
+    height: 55px;
+}
+
+.slider_logo_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: darkgray;
+    border-radius: 100%;
+    padding: 30px;
+}
+
+.slider_header {
+    text-align: center;
+}
+
+.slider_description {
+    text-align: center;
+}

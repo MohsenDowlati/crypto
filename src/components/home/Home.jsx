@@ -18,7 +18,7 @@ export default function Home() {
                     ))
                 }
             </div>
-            <div>
+            <div className="see_container">
                 <h3>What You'll See</h3>
                 {
                     see.map((item, index) => (
@@ -26,20 +26,20 @@ export default function Home() {
                     ))
                 }
             </div>
-            <div>
+            <div className="work_container">
                 <h3>How It Works</h3>
                 {
                     work.map((item, index) => (
-                        <Work key={index} data={index}/>
+                        <Work key={index} id={item.id} description={item.description} />
                     ))
                 }
             </div>
-            <div>
+            <div className="homeFooter_btn">
                 <p>Start Exploring Crypto Signals</p>
                 <RightArrowSvg/>
             </div>
             <p>Updated every hour • No registration needed</p>
-            <div>
+            <div className="homeFooter_container">
                 {
                     home_footer.map((item, index) => (
                         <HomeFooter key={index} number={item.number} text={item.text} />

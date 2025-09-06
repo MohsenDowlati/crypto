@@ -3,14 +3,14 @@ import {MagnetSvg} from "@/svg";
 
 export default function Navbar() {
     return (
-        <nav>
-            <MagnetSvg/>
-            <div>
-                <button>slider</button>
-                <button>see</button>
-                <button>work</button>
+        <nav className="navbar_container">
+            <MagnetSvg className="navbar_logo" />
+            <div className="navbar_navigation_container">
+                <button className="navbar_navigation_button">slider</button>
+                <button className="navbar_navigation_button">see</button>
+                <button className="navbar_navigation_button">work</button>
             </div>
-            <button>get started</button>
+            <button className="navbar_start">get started</button>
         </nav>
     )
 }

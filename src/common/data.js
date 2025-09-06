@@ -5,19 +5,19 @@ export const slider = [
         id: 1,
         title: 'Real-Time Crypto Signals',
         description: 'Get hourly updates on cryptocurrencies worth watching. Each signal comes with detailed reasons why it\'s important right now.',
-        icon: <ChartSvg/>
+        icon: <ChartSvg className="slider_logo"/>
     },
     {
         id: 2,
         title: 'Smart Analysis',
         description: 'Our algorithm identifies key market movements, institutional activity, and technical breakouts to bring you the most relevant opportunities.',
-        icon: <LightSvg/>
+        icon: <LightSvg className="slider_logo"/>
     },
     {
         id: 3,
         title: 'No Registration Required',
         description: 'Start using MagnetXt immediately. No sign-ups, no personal data required. Just pure crypto analysis delivered every hour.',
-        icon: <TimeSvg/>
+        icon: <TimeSvg className="slider_logo"/>
     }
 ]
 
@@ -26,19 +26,19 @@ export const see = [
         id: 1,
         title: 'Crypto name & current price',
         description: 'Real-time market data',
-        icon: <BTCSvg/>
+        icon: <BTCSvg className="see_logo"/>
     },
     {
         id: 2,
         title: 'Multiple analysis reasons',
         description: 'Why this crypto is important now',
-        icon: <MenuSvg/>
+        icon: <MenuSvg className="see_logo"/>
     },
     {
         id: 3,
         title: 'Signal strength indicator',
         description: 'Confidence level of each signal',
-        icon: <BarSvg/>
+        icon: <BarSvg className="see_logo"/>
     }
 ]
 
