@@ -1,5 +1,6 @@
 import React from "react";
 import {MagnetSvg} from "@/svg";
+import Link from "next/link";
 
 export default function Navbar() {
     return (
@@ -10,7 +11,10 @@ export default function Navbar() {
                 <button className="navbar_navigation_button">see</button>
                 <button className="navbar_navigation_button">work</button>
             </div>
-            <button className="navbar_start">get started</button>
+            <Link href="/crypto-list">
+                <button className="navbar_start">get started</button>
+            </Link>
+
         </nav>
     )
 }

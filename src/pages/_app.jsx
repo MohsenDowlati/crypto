@@ -5,6 +5,7 @@ import '@/styles/slider.css';
 import '@/styles/see.css';
 import '@/styles/work.css';
 import '@/styles/homeFooter.css';
+import '@/styles/crypto.css'
 
 export default function App({ Component, pageProps }) {
     return <Component {...pageProps} />;

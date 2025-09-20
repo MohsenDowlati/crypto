@@ -74,3 +74,39 @@ export const home_footer = [
         text: 'Updates'
     }
 ]
+
+export const crypto_data = [
+    {
+        id: 1,
+        iconURL: "",
+        iconALT: "BTC",
+        name: "Bitcoin",
+        tag: "BTC",
+        percentage: "+2.4% (24h)",
+        source: ["Large institutional buying detected in the last 4 hours","Breaking above key resistance at $67,000","Volume spike of 340% compared to daily average"],
+        fee: "$67,432",
+        strength: 3,
+    },
+    {
+        id: 2,
+        iconURL: "",
+        iconALT: "ETH",
+        name: "Ethereum",
+        tag: "ETH",
+        percentage: "+5.7% (24h)",
+        source: ["Major DeFi protocol upgrade announcement", "Staking rewards increased by 15%"],
+        fee: "$3,847",
+        strength: 4,
+    },
+    {
+        id: 3,
+        iconURL: "",
+        iconALT: "SOL",
+        name: "Solana",
+        tag: "SOL",
+        percentage: "+8.2% (24h)",
+        source: ["New partnership with major gaming platform","Network activity up 45% this week","Technical breakout confirmed above $230"],
+        fee: "$234.56",
+        strength: 5,
+    }
+]
