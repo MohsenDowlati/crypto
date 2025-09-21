@@ -1,8 +1,8 @@
 import React from 'react';
 
-export default function Slider({title, description, icon}) {
+export default function Slider({title, description, icon, disply}) {
     return (
-        <div className="slider_container">
+        <div className="slider_container" style={{display : disply ? "flex" : "none"}}>
             <div className="slider_logo_container">
                 {icon}
             </div>

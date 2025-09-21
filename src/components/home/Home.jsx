@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import Welcome from "@/components/home/Welcome";
 import Slider from "@/components/home/Slider";
 import {home_footer, see, slider, work} from "@/common/data";
@@ -8,13 +8,29 @@ import {RightArrowSvg} from "@/svg";
 import {HomeFooter} from "@/components/home/HomeFooter";
 
 export default function Home() {
+
+    const [display, setDisplay] = useState([true,false,false]);
+
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setDisplay((prev) => {
+                const currentIndex = prev.findIndex((val) => val === true);
+                const nextIndex = (currentIndex + 1) % prev.length;
+
+                return prev.map((_, i) => i === nextIndex);
+            });
+        }, 5000);
+        return () => clearInterval(interval); // cleanup on unmount
+    }, [display]);
+
     return (
         <article>
             <Welcome/>
             <div>
                 {
                     slider.map((item, index) => (
-                        <Slider key={index} title={item.title} description={item.description} icon={item.icon} />
+                        <Slider key={index} title={item.title} description={item.description} icon={item.icon} disply={display[index]} />
                     ))
                 }
             </div>

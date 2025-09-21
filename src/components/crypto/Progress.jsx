@@ -8,7 +8,7 @@ import React, { useEffect, useRef, useState } from "react";
  * - avoids SVG filters and risky primitives
  */
 export default function Progress({
-                                             size = 180,
+                                             size = 100,
                                              strokeWidth = 12,
                                              apiUrl = "https://worldtimeapi.org/api/ip",
                                              showText = true,
@@ -144,7 +144,6 @@ export default function Progress({
                         strokeLinecap="round"
                         style={{ transition: "stroke-dashoffset 0.12s linear, stroke 300ms linear" }}
                     />
-                    {/* shimmer: thin dashed stroke on top */}
                     <circle
                         className={`shimmer-${uid.current}`}
                         cx={size/2}
@@ -166,7 +165,7 @@ export default function Progress({
             }}>
                 {showText && (
                     <div className={`pulseCenter-${uid.current}`} style={{ textAlign: "center" }}>
-                        <div style={{ fontSize: Math.round(size*0.14), fontWeight: 700 }}>Next update</div>
+                        <div style={{ fontSize: Math.round(size*0.1), fontWeight: 700 }}>Next update</div>
                         <div style={{ fontSize: Math.round(size*0.11), opacity: 0.85 }}>{readable}</div>
                     </div>
                 )}
