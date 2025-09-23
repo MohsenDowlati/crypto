@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-function Page({ title, className, children }) {
+function Page({ title, className, children, nav }) {
     const pageTitle = title === 'Home' ? 'MagnetXt' : `MagnetXt | ${title}`;
 
     return (
@@ -10,8 +10,8 @@ function Page({ title, className, children }) {
             <Head>
                 <title>{pageTitle}</title>
             </Head>
-            <Navbar />
-            <main>
+            <main style={{width:'100%'}}>
+                <Navbar children={nav} />
                 <article className={className}>{children}</article>
             </main>
             <Footer />

@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from "next/image";
+import {useRouter} from "next/router";
 
 export default function CryptoCard(
     {
@@ -13,8 +14,14 @@ export default function CryptoCard(
         strength,
     }
 ) {
+    const router = useRouter();
+
+    const navigationHandler = () => {
+      router.push("/123")
+    }
+
     return (
-            <div className="crypto_card_container">
+            <div className="crypto_card_container" onClick={navigationHandler}>
                 <div className="crypto_card_upper">
                     <div className="crypto_card_image_container">
                         <Image className="crypto_card_image" src={iconURL} alt={iconALT}/>
@@ -47,11 +54,11 @@ export default function CryptoCard(
                 <div className="crypto_card_below">
                     <h5 className="crypto_card_strength">Signal Strength</h5>
                     <div className="crypto_card_circles_container">
-                        <div className="crypto_card_circle" style={{backgroundColor: (strength>=1 ? "black":"aqua")}}/>
-                        <div className="crypto_card_circle" style={{backgroundColor: (strength>=2 ? "black":"aqua")}}/>
-                        <div className="crypto_card_circle" style={{backgroundColor: (strength>=3 ? "black":"aqua")}}/>
-                        <div className="crypto_card_circle" style={{backgroundColor: (strength>=4 ? "black":"aqua")}}/>
-                        <div className="crypto_card_circle" style={{backgroundColor: (strength>=5 ? "black":"aqua")}}/>
+                        <div className="crypto_card_circle" style={{backgroundColor: (strength>=1 ? "var(--CTA)":"var(--primary)")}}/>
+                        <div className="crypto_card_circle" style={{backgroundColor: (strength>=2 ? "var(--CTA)":"var(--primary)")}}/>
+                        <div className="crypto_card_circle" style={{backgroundColor: (strength>=3 ? "var(--CTA)":"var(--primary)")}}/>
+                        <div className="crypto_card_circle" style={{backgroundColor: (strength>=4 ? "var(--CTA)":"var(--primary)")}}/>
+                        <div className="crypto_card_circle" style={{backgroundColor: (strength>=5 ? "var(--CTA)":"var(--primary)")}}/>
                     </div>
                 </div>
             </div>

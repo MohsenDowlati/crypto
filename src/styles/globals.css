@@ -1,9 +1,9 @@
 :root {
-  --background: #f5f5f5;
+  --background: #F4EEFF;
   --foreground: #171717;
-  --primary: #85bbf1;
-  --secondary: #6bbf6e;
-  --CTA: #32077e;
+  --primary: #DCD6F7;
+  --secondary: #A6B1E1;
+  --CTA: #424874;
 }
 
 @theme inline {
@@ -16,9 +16,11 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
-  max-width: 600px;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 0;
+  margin: 0;
 }

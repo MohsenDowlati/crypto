@@ -6,6 +6,7 @@ import See from "@/components/home/See";
 import Work from "@/components/home/Work";
 import {RightArrowSvg} from "@/svg";
 import {HomeFooter} from "@/components/home/HomeFooter";
+import Link from "next/link";
 
 export default function Home() {
 
@@ -25,7 +26,7 @@ export default function Home() {
     }, [display]);
 
     return (
-        <article>
+        <>
             <Welcome/>
             <div>
                 {
@@ -51,17 +52,35 @@ export default function Home() {
                 }
             </div>
             <div className="homeFooter_btn">
-                <p>Start Exploring Crypto Signals</p>
-                <RightArrowSvg/>
+                <Link href={"/crypto-list"}>
+                    <button className="homeFooter_btn_button">
+                        Start Exploring Crypto Signals
+                        <RightArrowSvg/>
+                    </button>
+
+                </Link>
             </div>
-            <p>Updated every hour • No registration needed</p>
-            <div className="homeFooter_container">
-                {
-                    home_footer.map((item, index) => (
-                        <HomeFooter key={index} number={item.number} text={item.text} />
-                    ))
-                }
+            <div style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                flexDirection: "column",
+                marginBottom: "30px",
+            }}>
+                <p style={{
+                    fontSize: "14px",
+                    padding: "10px",
+                    color: "grey",
+                }}>Updated every hour • No registration needed</p>
+                <div className="homeFooter_container">
+                    {
+                        home_footer.map((item, index) => (
+                            <HomeFooter key={index} number={item.number} text={item.text} />
+                        ))
+                    }
+                </div>
             </div>
-        </article>
+
+        </>
     )
 }

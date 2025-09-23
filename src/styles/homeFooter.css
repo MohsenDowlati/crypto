@@ -3,6 +3,21 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    background-color: var(--primary);
+}
+
+.homeFooter_btn_button {
+    background-color: var(--CTA);
+    padding: 16px 24px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8px 0;
 }
 
 .homeFooter_container {
@@ -19,4 +34,19 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: var(--primary);
+    width: 120px;
+    height: 120px;
+    border-radius: 8px;
+}
+
+.homeFooter_card h4{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.homeFooter_card p {
+    font-size: 14px;
+    font-weight: 400;
+    white-space: nowrap;
 }

@@ -6,7 +6,7 @@ import CryptoCard from "@/components/crypto/CryptoCard";
 
 export default function Crypto() {
     return (
-        <article>
+        <>
             <Header/>
             <div>
                 {
@@ -17,6 +17,6 @@ export default function Crypto() {
             </div>
 
             <Footer/>
-        </article>
+        </>
     )
 };

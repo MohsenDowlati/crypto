@@ -3,26 +3,32 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    background-color: var(--secondary);
+    padding: 10px 5px;
 }
 
 .slider_logo {
-    width: 55px;
-    height: 55px;
+    width: 45px;
+    height: 45px;
 }
 
 .slider_logo_container {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: darkgray;
+    background-color: var(--primary);
     border-radius: 100%;
     padding: 30px;
 }
 
 .slider_header {
     text-align: center;
+    font-family: sans-serif;
+    font-size: 18px;
 }
 
 .slider_description {
     text-align: center;
+    font-family: sans-serif;
+    font-size: 14px;
 }

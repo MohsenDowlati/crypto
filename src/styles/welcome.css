@@ -8,7 +8,7 @@
 .welcome_logo_container {
     display: flex;
     border-radius: 20px;
-    background-color: #171717;
+    background-color: var(--CTA);
     padding: 10px;
 }
 
@@ -20,8 +20,10 @@
 
 .welcome_header {
     text-align: center;
+    font-family: sans-serif;
 }
 
 .welcome_description {
     text-align: center;
+    font-family: sans-serif;
 }
