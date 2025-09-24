@@ -1,11 +1,11 @@
 import React, {useEffect, useState} from 'react';
-import Welcome from "@/components/home/Welcome";
-import Slider from "@/components/home/Slider";
-import {home_footer, see, slider, work} from "@/common/data";
-import See from "@/components/home/See";
-import Work from "@/components/home/Work";
-import {RightArrowSvg} from "@/svg";
-import {HomeFooter} from "@/components/home/HomeFooter";
+import Welcome from "./Welcome";
+import Slider from "./Slider";
+import {home_footer, see, slider, work} from "../../common/data";
+import See from "./See";
+import Work from "./Work";
+import {RightArrowSvg} from "../../svg";
+import {HomeFooter} from "./HomeFooter";
 import Link from "next/link";
 
 export default function Home() {

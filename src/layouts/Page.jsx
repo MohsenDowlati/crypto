@@ -1,6 +1,6 @@
 import Head from 'next/head';
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 function Page({ title, className, children, nav }) {
     const pageTitle = title === 'Home' ? 'MagnetXt' : `MagnetXt | ${title}`;

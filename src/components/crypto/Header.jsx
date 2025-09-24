@@ -1,5 +1,5 @@
 import React from 'react';
-import Progress from "@/components/crypto/Progress";
+import Progress from "./Progress";
 
 export default function Header() {
     return (

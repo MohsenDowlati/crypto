@@ -1,4 +1,4 @@
-import {BarSvg, BTCSvg, ChartSvg, LightSvg, MenuSvg, TimeSvg} from "@/svg";
+import {BarSvg, BTCSvg, ChartSvg, LightSvg, MenuSvg, TimeSvg} from "../svg";
 
 export const slider = [
     {

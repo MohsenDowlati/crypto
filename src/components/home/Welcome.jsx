@@ -1,5 +1,5 @@
 import React from 'react';
-import {MagnetSvg} from "@/svg";
+import {MagnetSvg} from "../../svg";
 
 export default function Welcome() {
     return (

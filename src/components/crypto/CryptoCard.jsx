@@ -4,6 +4,7 @@ import {useRouter} from "next/router";
 
 export default function CryptoCard(
     {
+        id,
         iconURL,
         iconALT ,
         name,
@@ -17,7 +18,7 @@ export default function CryptoCard(
     const router = useRouter();
 
     const navigationHandler = () => {
-      router.push("/123")
+      router.push(`\\${id}`)
     }
 
     return (
