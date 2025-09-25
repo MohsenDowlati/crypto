@@ -22,7 +22,7 @@ export default function Home() {
                 return prev.map((_, i) => i === nextIndex);
             });
         }, 5000);
-        return () => clearInterval(interval); // cleanup on unmount
+        return () => clearInterval(interval);
     }, [display]);
 
     return (

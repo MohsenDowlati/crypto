@@ -5,6 +5,7 @@
     align-items: center;
     background-color: var(--secondary);
     padding: 10px 5px;
+    min-height: 150px;
 }
 
 .slider_logo {
@@ -31,4 +32,5 @@
     text-align: center;
     font-family: sans-serif;
     font-size: 14px;
+    margin: 0 5px;
 }

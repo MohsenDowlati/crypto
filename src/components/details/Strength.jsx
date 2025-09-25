@@ -8,11 +8,11 @@ export default function Strength({strength}) {
                     <h2>Signal Strength</h2>
                 </div>
                 <div className="details_strength_circles">
-                    <div className="crypto_card_circle" style={{backgroundColor: (strength>=1 ? "var(--CTA)":"var(--primary)")}}/>
-                    <div className="crypto_card_circle" style={{backgroundColor: (strength>=2 ? "var(--CTA)":"var(--primary)")}}/>
-                    <div className="crypto_card_circle" style={{backgroundColor: (strength>=3 ? "var(--CTA)":"var(--primary)")}}/>
-                    <div className="crypto_card_circle" style={{backgroundColor: (strength>=4 ? "var(--CTA)":"var(--primary)")}}/>
-                    <div className="crypto_card_circle" style={{backgroundColor: (strength>=5 ? "var(--CTA)":"var(--primary)")}}/>
+                    <div className="crypto_card_circle" style={{backgroundColor: (strength>=1 ? "var(--CTA)":"var(--secondary)")}}/>
+                    <div className="crypto_card_circle" style={{backgroundColor: (strength>=2 ? "var(--CTA)":"var(--secondary)")}}/>
+                    <div className="crypto_card_circle" style={{backgroundColor: (strength>=3 ? "var(--CTA)":"var(--secondary)")}}/>
+                    <div className="crypto_card_circle" style={{backgroundColor: (strength>=4 ? "var(--CTA)":"var(--secondary)")}}/>
+                    <div className="crypto_card_circle" style={{backgroundColor: (strength>=5 ? "var(--CTA)":"var(--secondary)")}}/>
                 </div>
 
             </div>

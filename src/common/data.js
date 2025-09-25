@@ -1,4 +1,4 @@
-import {BarSvg, BTCSvg, ChartSvg, LightSvg, MenuSvg, TimeSvg} from "../svg";
+import {BarSvg, BTCSvg, ChartSvg, LightSvg, MenuSvg, NewsSvg, OrganizationSvg, SentimentSvg, TimeSvg} from "../svg";
 
 export const slider = [
     {
@@ -108,5 +108,66 @@ export const crypto_data = [
         source: ["New partnership with major gaming platform","Network activity up 45% this week","Technical breakout confirmed above $230"],
         fee: "$234.56",
         strength: 5,
+    }
+]
+
+export const details_card = [
+    {
+        id: 1,
+        icon: <NewsSvg className="details_card_logo"/>,
+        category: "News",
+        signal: 2,
+        description: [
+            {
+                title: "Major institutional adoption announcement from BlackRock",
+                sub_title: "2 hours ago"
+            },
+            {
+                title: "SEC approves new Bitcoin ETF applications",
+                sub_title: "4 hours ago"
+            }
+        ]
+    },
+    {
+        id: 2,
+        icon: <ChartSvg className="details_card_logo"/>,
+        category: "Technical",
+        signal: 3,
+        description: [
+            {
+                title: "Breaking above key resistance at $67,000 with strong volume",
+            },
+            {
+                title: "RSI showing bullish divergence on 4-hour chart",
+            },
+            {
+                title: "Golden cross formation detected on daily timeframe",
+            }
+        ]
+    },
+    {
+        id: 3,
+        icon: <OrganizationSvg className="details_card_logo"/>,
+        category: "Fundamental",
+        signal: 1,
+        description: [
+            {
+                title:"Mining difficulty adjustment shows network strength increasing"
+            }
+        ]
+    },
+    {
+        id: 4,
+        icon: <SentimentSvg className="details_card_logo"/>,
+        category: "Sentiment",
+        signal: 2,
+        description: [
+            {
+                title: "Social media sentiment reached 85% bullish in last 24h",
+            },
+            {
+                title: "Whale accumulation detected with 2,400 BTC bought"
+            }
+        ]
     }
 ]
